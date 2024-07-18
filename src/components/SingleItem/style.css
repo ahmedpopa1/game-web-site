@@ -1,0 +1,78 @@
+/* Navbar styling */
+
+/* Item details container */
+.itemDetails {
+  display: flex; /* Use flexbox for layout */
+  margin-bottom: 20px; /* Add space below each item */
+}
+
+/* Item photo styling */
+.itemPhoto {
+  flex: 0 0 auto; /* Do not grow, do not shrink, initial width */
+  margin-right: 20px; /* Add space between photo and details */
+}
+
+.itemPhoto img {
+  width: 50%; /* Set image width */
+  float: left; /* Float image to the left */
+  border: 5px solid #000; /* Add a solid black border with a width of 5px */
+  border-radius: 10px; /* Optionally, add rounded corners */
+}
+
+/* Details container */
+.details {
+  flex: 1 1 auto; /* Grow as needed, initial width */
+}
+
+/* Model details styling */
+.model {
+  text-align: left; /* Align text to the left */
+  margin-bottom: 10px; /* Add space below the model details */
+}
+
+.model h1 {
+  margin: 0; /* Remove default margin for h1 */
+  font-size: 28px; /* Increase font size for h1 */
+}
+
+.model h2 {
+  margin: 0; /* Remove default margin for h2 */
+  font-size: 28px; /* Increase font size for h2 */
+}
+
+.model p.about {
+  font-size: 28px; /* Adjust font size for the 'about' section */
+  text-align: right; /* Align 'about' text to the right */
+}
+
+/* Body details styling */
+.body {
+  padding: 10px; /* Add padding around the body details */
+}
+
+.body ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding for ul */
+  margin: 0; /* Remove default margin for ul */
+}
+
+.body ul li {
+  margin-bottom: 10px; /* Add space between each item */
+}
+
+/* Rate and review section styling */
+.rate {
+  text-align: center; /* Center align the rate component */
+  margin-bottom: 20px; /* Add space below the rate component */
+}
+
+.review {
+  text-align: center; /* Center align the review section */
+}
+
+.textarea {
+  width: 90%; /* Set textarea width to 100% */
+  max-width: 90%; /* Ensure it doesn't exceed parent width */
+  padding: 10px; /* Add padding inside textarea */
+  margin-top: 10px; /* Add space above the textarea */
+}

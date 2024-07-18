@@ -1,0 +1,72 @@
+.home-container {
+  background-image: url('./../../Assets/car.jpg');
+  background-position: left;
+  height: 100vh;
+  width: 100%;
+  padding: 50px 80px;
+}
+
+.home-banner-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted minmax width */
+  gap: 20px;
+  padding: 20px;
+}
+
+.game-info {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Creates a square aspect ratio (1:1) */
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Added transitions */
+}
+
+.game-info:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px); /* Move the card up by 5px on hover */
+  border-color: #ff0000; /* Change border color on hover */
+}
+
+.game-info-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  transition: background-color 0.3s ease; /* Transition for background color change */
+}
+
+.game-info:hover .game-info-content {
+  background-color: rgba(70, 9, 9, 0.7); /* Darken background on hover */
+}
+
+.game-info p {
+  font-size: 1.5rem; /* Increased font size */
+  margin-bottom: 10px;
+  color: #ff0000; /* Red text color */
+}
+
+.game-info h2 {
+  font-size: 2rem; /* Increased font size */
+  margin-bottom: 15px;
+  color: #ff0000; /* Red text color */
+}
+
+.game-info img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+ .lol{
+  font-size: 28px;
+  color: red;
+ }
